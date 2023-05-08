@@ -21,8 +21,6 @@ public class Day04ScannerHomework {
         System.out.println("Girdiginiz 3 sayinin ortalamasi : "+(number1+number2+number3)/3);
 
 
-        //2. ödev
-
     }
 
 
