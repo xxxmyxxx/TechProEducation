@@ -2,7 +2,7 @@ package day04scannerwrapper;
 
 import java.util.Scanner;
 
-public class Day04ScannerHomework {
+public class Day04ScannerHomework1 {
     // 1 ) Kullanıcıdan aldığınız 3 tane sayının ortalaması alın
     // 2 ) Kullanıcıdan aldığın 3 basmaklı sayının rakamları toplamı
 
