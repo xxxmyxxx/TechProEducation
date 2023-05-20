@@ -1,0 +1,141 @@
+
+
+        String Class METODLARI
+        NOT: BIR METODUN BIZE NE VERDIGINI DATA TIPINI OGRENEBILMEK ICIN CTRL TUSUNA BASILI TUTUP FAREYLE UZERINE
+        GELIP BASARAK OGRENEBILIRIZ.
+        1) Equals() (esit mi?): iki tane String metodun ayni olup olmadigini anlamamiza yarar.(ne zaman kullaniriz)
+        "equlas" metodu boolean return eder. (o metod bize ne verir)
+
+        2) "equalsIgnorCase()"   iki tane Stringin ayni olup olmadigini buyuk kucuk harfe dikkat etmeden anlamamizi saglar.
+        "equalsIgnorCase" metodu boolean return eder.
+
+        3) toLowerCase() :        bir Stringdeki butun harfleri kucuk harfe cevirmek icin kullanilir.
+                bu metod String return eder.
+
+        4)toUpperCase ():         butun harfleri buyuk harfe cevirmemize yarar.
+        bu metod String return eder.
+
+        5)charAt():             Bir Stringden belli bir indexteki karakteri almak icin kullanilir.
+                bu metod bize char verir. return eder.
+
+        6)length():             bir Stringte kac tane karakter kullanildigini ogrenme icin kullanilir.
+                bu metod int return eder.
+
+        7) contains ()           Bir Stringte belli bir karakterin veya karakterlerin var olup olmadigini anlamak icin kullanilir.
+                bu metod boolean return eder.
+                NOT: CONTAINS () METODU CHAR ICIN KULLANILAMAZ. STRING KULLANILMAK ZORUNDADIR
+
+        8) split ()            i)bir Stringi istedigimiz charecterden parcalamaya yarar.
+        ii) Split metodu "Array" return eder.  String strArray[] = str.split("X"); bosluktan keseiyor
+
+        9) indexOf()              bu metod verilen karakter veya karakterlerin ILK GORUNUMUNUN indexini verir.
+        bu metod hem String hem de char ile calisabilir.
+                farki sadece char yaptigimizda tek karakteri arayabiliriz.
+                her zaman integer verir
+        eger aradigimiz karakter Stringte yoksa "-1" degeri output verir
+        4 tane kullanimi vardir. variablesin yanina nokta koydugumuzda bu kullanimlari veriyor
+        indexOf() iki parametre ile kullanilirsa ikinci parametrede verilen sayi kadar karakteri gectikten sonra
+        istenen karakterin ilk veya son gorundugu yeri arar
+
+        10)lastIndexOf()          Verilen karakter veya karakterlerin son goruldugu yerin indexini verir.
+                bu metod hem String hem de char ile calisabilir.
+                farki sadece char yaptigimizda tek karakteri arayabiliriz.,
+                coklu karakter arayamayiz
+        LastIndexOf() istenen karakterlerden en sonda bulunan ilk harfin indexini verir
+        her zaman integer verir
+        indexOf() iki parametre ile kullanilirsa ikinci parametrede verilen sayiyi index olarak kabul ederek
+        en bastan bu indexe kadar olan kismi bir kutu icine aliriz  ve lasIndexOf () metodunu sadece bu
+        kutu icindeki String icin kullaniriz
+
+        11) isEmpty()              Verilen Stringin bos olup olmadigini kontrol ederek sonucu bize  verir
+        eger Stringte hic karakter yoksa bu metod true return eder.
+                Space karakteri de dahil olmak uzere herhani bir karakter varsa "false" return eder.
+                Stringin icinde karakter olup olmadigini ayrica "length()==0" metodu da bize verir.
+        ancak bu yol en az iki asamali islem erektirdigi icin biz bu yontemi tercih etmeyiz
+        NOT: BIR STRINGIN BOS OLUP OLMADIGINI KONTROL ETMEK ICIN "LENGHT()=0" KULLANMAYIN
+        BU HUSUS INTERWIEVLER DE BU HUSUS SORULABILIR
+
+        12)isBlank()               Verilen Stringin bos olup olmadigini kontrol ederek sonucu bize  verir
+        eger Stringte hic karakter yoksa veya sadece space karakterlerinde olusuyorsa
+        bu metod true return eder. yani space karakterlerini dikkate almaz
+
+        13)concatenation()         Birden cok String’i + işareti ile topladiginizda Java bu String değişkenleri birleştirerek yeni bir String oluşturur
+        Birden fazla String'i birleştirerek tek bir String haline getirmek için kullanılır.
+        İki şekilde kullanilir.
+                i) + (toplama) işareti ile
+        ii) concat() methodu kullanarak
+        concat() metodu her zaman en sona ekler
+        Not: Eger matematiksel bir işlemin içinde String kullanilirsa, matematikteki öncelikler dikkate alinarak işlem yapilir.
+                Sira String ile toplamaya geldiğinde toplama yerine Concatenation uygulanir
+        String a = "Hello";
+        int b = 2; int c = 3;
+        System.out.printİn(a+b+c);— --------- ► Hello23
+        System.out.printİn(c+b+a);— --------- ► 5Hello
+        System.out.printİn(a+(b+c)); --------- ► Hello5
+        System.out.println(a+b*c); --------- ► Hello6
+
+        14) replace()               HERHANGİ BİR KARAKTERİ VEYA KARAKTERLERİ DEGİSTİRMEK (SILMEK) İCİN KULLANİLİR
+        En basa silmek istedigimiz karakteri virgulden sonra da yerine koymak istedigimiz karakteri veya karakterleri koyacagiz
+        bosluklari ortadan kaldirmak icin "replace" metodunu kullanirim
+        en son "leght" metoduyla noktalama isaretleri dahil toplam karakter sayisini verir.
+        karakterlerin yazimi eslesmezse replace metodu degistirmez.
+        bunun yaninda degisim yapmak icin herhangi bir karakter sinirlamasi yoktur
+
+        15)replaceAll()          " hepsini al demektir, yanindaki "[]" koseli  parantez bunlarin rakam oldugunu anlatir.
+        NOT: BIR GURUP DATAYI IFADE EDEN KODLARA "REGEX" DENIR
+        regex: regular Expression un kisaltilmi halidir
+        "\\" bu isaretin adi BACKWARD SLASH tir
+        NOT: "REPLACEALL" BIR GRUP KARAKTERI (RAKAMLAR, NOKTALAMA ISARETLERI GIBI) ALIR.
+                TEK BIR CESIT KARAKTERI ALIRKEN "RAPLACE" METODUNU SECMELIYIZ.
+        NOT: replace metodunda "char" kullanilabilir ama ReplaceAll metodunda "char" kullanilamaz
+
+        1)TUM RAKAMLAR ==>                      [0-9]
+        2)TUM KUCUK HARFLER ==>                  [a-z]
+        3)TUM BUYUK HARFLER                     [A-Z]
+        4)TUM HARFLER ==>                       [a-zA-Z]
+        5) SESLI HARFLER ==>                    [AEIOUaeiou]
+        6) SPACE KARAKTERI ICIN ==>             [ ] .ICINE BOSLUK KOY
+        7) TUM RAKAMLAR VE TUM HARFLER ==>       [0-9a-zA-Z]
+        8) TUM NOKTALAMA ISARETLERI ==>         \\p{Punct}  //noktalama isaretleri icin regex diye arayabiliriz .EZBERLE
+
+        1)Rakamlar haric tum karakterler==>             [^0-9]    "^" 'sareti (haric ) demektir
+        2) Kucuk harfler haric tum karakterler ==>      [^a-z]
+        3) buyuk harfler haric tum karakteler            [^A-Z]
+        4) Tum harler haric tum karakterler             [^a-zA-z]
+        5) Space haric tum karakterler ==>              [^ ] ^ isaretinden sonra bosluk var
+
+                    \\s  : bosluk (space)
+                    \\S : boslik disindaki tum karakterler
+                    \\ w  : harfler ve rakamlar (a-z, A-Z, 0-9)
+                    \\W  : harfler ve rakamlar disindaki tum karakterler
+                    \\d  : rakamlar (0-9)
+                    \\D  : rakamlar dinidaki tum karakterler
+
+        15) Substring()             sub alt demektir substring bir stringin icindeki string demek
+        ramazan "substring (0,1) "r" harfini alir. parantez icindeki ilk index dahil son index haric olur.
+        iki kullanimi vardir
+        substring(baslangic indexi, bitis indexi) Stringin ortasindan bir parca almaya yarar(Ankara"dan "kara" alma gibi)
+        2) substringin (baslangic indexi)Stringin verilen indexten sonuna kadar almaya yarar.
+
+        16) replaceFirst()   : ilk karakteri istenen baska bir karakterle degistirmek icin kullanilir.
+                sadece "replace" metodu ise verilen stringteki istenen butun karakterleri degistirir
+
+        17) trim () ? :       sacin ucundaki kiriklari aldirmak gibidir. Bir Stringin Bastaki ve sonundaki duzeltmeleri yapar.
+                bastaki ve sondaki spaceleri siler  aradaki Space karakterlerine  dokunmaz
+
+        18) compareTo():     bu metod iki tane Stringi ALFABETIK OLARAK (lexikografik) karsilastirir.
+                buyuk harf - kucuk harfe duyarlidir. eger duyarli olmasini istemezsek "compareToIgnorCase"
+        metodunu kullanabiliriz.
+        bu kodda cikan sonuc iki harf arasindaki farki ortaya koyar. INT DEGERI VERIR.
+
+        19) repeat ()         Bu metod parantez icinde verilen sayi kadar Stringi tekrar eder. Ekrana ayni Stringten verilen sayi
+        kadar tekrar tekrar yazar. Cok sik kullanilmaz.
+ /*
+	  \n (or \r): starts from a new line : metni bir alt satirdan itibaren yazdirir.
+	          \t:  horizontal tab : metni yatayda 1 tab miktari kaydirir.
+	          \\: prints a back slash :\ (ters slash) yazdirir
+	          \': prints single quote :' tek tirnak yazdirir.
+	          \": prints double quote :"" cift tirnak yazdirir.
+	 \: backslash
+	 /:front slash
+	 */
