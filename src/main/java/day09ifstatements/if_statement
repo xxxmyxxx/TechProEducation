@@ -1,0 +1,107 @@
+
+        /*
+        "if" kodlari belli sartlara bagli olarak calistirmaya yarar.
+        "if" ile baslayan ifadeler her bir kosulu mantiksal operator seklinde degerlendirir.
+        == isareti "if"li ifadelerde atanan deger "esit mi" diye kontrol eder.
+        = isareti x=5 dedigimizde x yerine 5 degerini atamis oluruz.
+        " if(name == "Steven") ifadesi name Steven'e esit mi demektir.
+        "else if" ifadesi "eger dogru degılse" "eger yoksa" sunu yap demektır.
+        "else" ifadesi "if" veya "else if"ten sonra gelir.
+
+        Arrays: dizi anlamindadir.(liste)
+        Degiskenler normalde birden fazla birsey tutamaz
+        indexlemeye sifirdan baslanir.
+        aplicationlar belli sartlara bagli islem yapar. mesala ATM cihazlari sifreyi dogru girersen islem yapar
+        girmezsan eylem yapmaz.
+
+
+
+        LOOPS DONGULAR
+        for loop (for dongusu) kosul saglanincaya kadar dongu devam eder.
+        While loop: kosul saglandigi surece dongu devam eder
+        do-While loop: javada kullanilir. kosul saglansa da saglanmasa da bir kez calistirilir.
+        code dubug: kod ayiklama
+        Psuude code: "sozde kod" herhangi bir dile bagli degildir.
+
+
+        " &&" "End" islemi kesinlikle sadece booleanlarla (True, False) kullanilir.
+       "True" && "True" sonucu "True" verir.
+       "Erkan Bey bana çay ve kahve getirin." "cay && kahve"
+       bunlardan birini getirip digerini getirmedigi zaman isini eksik yapmis olur.
+       && (ve) islemi kullandigimizda bize verilen islemlerin hepsi tamemen yerine getirmeliyiz.
+       && islemi mukemmeliyetcidir. o yuzden bize verilen islemleri eksiksiz yerine geitmeliyiz.
+       bir tane "false" varsa sonuc "false" demektir.
+       Bunlardan birini yerine getirmedigimizde sonuc "False" dir
+       && (end) isleminde "true" alabilmenin yolu butun islemlerin eksiksiz yerine getirilmesidir.
+       YUKARIDAKI HUSUSLAR ONEMLI.
+
+       Negative sayiler icin asagidaki gibi islem yapilir: "abs" mutlak deger demektir. bunu javada
+       da Math metodunda bulabilirz. "abs" (mutlak deger verilen sayıyı pozitive cevirir
+
+       bir sayinin cift olmasini biz ikiye tam bolunmesinden anlariz.
+       javada kalani bulmak icin "%" "macılıs" kullaniriz.
+
+         "=" isaretinin gorevi atama operotorudur. o yuzden tek esittir isareti "esittir" anlamina gelmez
+       sagdaki veriyi alir sol tarafin icine koyar.
+       "esittir" anlamina gelmesi icin iki tane esittir "==" isareti koymak zorundayız.
+       Matematikteki "=" sembolu javada "==" esittir seklinde yazilir.
+       yukaridaki ornekte goruldugu gibi
+       NOT: "CIFT ESITTIR ISARETININ ONUNDA VE SONRASINDA BOSLUK OLABILIR
+
+        javada "veya" demek "||" demektir.
+        "||" isareti sadece booleanlarla kullanilir.
+        || isleminde "false" almak icin butun degerlerin "false" olmasi lazım
+        sadece bir tane "true" sonucu "true" yapmaya yeter
+
+
+       har variable'lari matematiksel islemlerde kullanirsaniz, Java onlarin ASCII degerlerini kullanir.
+             Ornegin; System.out.println('A' + 'C'); ekrana AC yerine 132 yazdirir
+       Java'da "+" sembolunun iki anlami vardir.
+           i)Toplama islemi
+           ii)Birlestirme Islemi(Concatenation)
+      Java "+" sembolu gorunce once toplama yapmaya calisir, yapamazsa birlestirme islemi yapmaya calisir,
+       o da olmazsa baska ihtimal kalmadigi icin hata verir.
+
+        "split" ingilizcede "parcalanmak, parcalamak" demek.
+       "split(" ")  " ifadesi iki kelimeyi aralarindaki bosluktan kes , parcala demektir.
+       "[1]" in anlami: java iki kelimeyi aralarindaki bosluktan parcalayarak 1. kelimeye "0" indeksi
+       2. kelimeye de "1" indeksini verdi. iste buradaki "1" 2. kelimeyi al demekti.
+       sondaki "charAt" ifadesi de aldigin bu kelimedeki ilk karakteri ver demektir.
+       eger isim ve soy ismin ilk harflerini ayni satirda yazdirmak istiyorsak;
+       "System.out.println(ilkHarf);" kodundaki "ln" ifadesini sileriz.
+       "split(" ")" ifadesindeki "regex" javanin kodlarindandir onu biz yazmiyoruz.
+
+        javada unlem isareti ve = isareti birlikte kullanildiginda esit degil anlamindadir.
+
+
+        COK ONEMLİ. "else" sadece geriye tek bir secenegin kaldigi durumlarda kullanilir.
+        eger geriye birden fazla secenek kaldiysa "}else if() {" kodu kallinilir.
+
+        Iki tane String'in birbirine esit olup olmadigini anlamak icin "==" degil, "equals()" kullaniniz.
+        "==" isareti matematiksel islemlerde esitliği kontrol etmek icin kullanilir
+        Iki tane String'in birbirine esit olup olmadigini kontrol etmek icin iki tane method kullanilabilir
+        i)equals() ==> Buyuk harf ve kucuk harfi onemser. "A" ile "a" farklidir
+        ii)equalsIgnoreCase() ==> Buyuk harf kucuk harfi onemsemez. "A" ile "a" aynidir.
+        "equals" ingilizce de esittir demektir.
+
+         "Boundary (sinir) Value(degeri) Analyze Test" (BVI) ==> Sinir degerlerini analiz etme demektir.
+        test kod yazmak kadar onemlidir. testerler bir nevi gurme gibidir. devoloper ise asci gibidir.
+        "else if"lerde true yakalanirsa diger kodlar incelenmez
+        "exeption" beklenmedik durum, istisna demektir. Hata yaptigimizi gosterir
+
+         "nested" ic ice gecmiş demektir. zigon sehpa gibi/ if in icinde if demektir.
+        NOT: "equals" sadece Stringlerde kullanilir. Char larda == kullanilir.
+        ONEMLI: Nested-If mumkun oldugunca tavsiye edilmez.
+         cunku java Nested leri uygularken cok fazla zaman harcar
+        Buna "Time Compexity" (zaman karmasikligi) denir. bu yuzden Nested kod yazmamaya calisiriz.
+        nested ile yazilmis kod gordugumuzde bunun baska alternatifi olup olmadigini kontrol etmeliyiz
+        baska altenatif varsa o yolla cozmek daha mantiklidir.
+
+        Switch "else" ve "else if"lerin cozdugu butun sorunlari cozer."swicht" biraz daha sadedir
+        "case" durum demektir
+                        COK COK ONEMLI
+        Note: Switch de sadece "int, byte, short, char, String" data tipleri kullanilabilir
+        Switch in icine "float, double, boolean, String" koyabiliriz. bunlarin disinda bir data tipi koydugumuzda hata aliriz
+
+        Note: Switch de sadece "int, byte, short, char, String" data tipleri kullanilabilir
+        Note: Eger 3 den fazla durum varsa switch() tercih ederim
