@@ -1,6 +1,6 @@
 package day15loops;
 
-public class WhileTekrar {
+public class WhileLoop01Tekrar {
     public static void main(String[] args) {
         //Ornek 1: 3 den 6 ya kadar tamsayilari console a yazdirin
 
@@ -25,7 +25,7 @@ public class WhileTekrar {
         System.out.println();
         int z = 6;
 
-        while (z < 19) {
+        while (z < 20) {
 
             if(z%2!=0){
                 System.out.print(z + " ");

@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int i = scan.nextInt();
-        double d =scan.nextDouble();
+        int n = 3;
 
-        String s = scan.nextLine();
+        String s = "selamcanimnaber";
+
+        String first = s.substring(0,n);
+        char a = s.charAt(0);
+        char b = s.charAt(n);
 
 
-        // Write your code here.
+        System.out.println(first);
+        System.out.println(a);
+        System.out.println(b);
 
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
+
+
+
+
     }
 }

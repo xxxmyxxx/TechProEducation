@@ -1,6 +1,6 @@
 package day06swapvaluesstringmanipulations;
 
-public class swap {
+public class SwapExample {
     public static void main(String[] args) {
         int a = 12;
         int b = 5;

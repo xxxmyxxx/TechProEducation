@@ -1,4 +1,4 @@
-package Tasks;
+package day0Tasks;
 
 import java.util.Scanner;
 
