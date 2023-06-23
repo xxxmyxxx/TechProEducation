@@ -25,7 +25,7 @@ public class E05 { // Coklu catch
             System.out.println(ch);
         } catch (ArithmeticException e) {
             System.out.println("Do not devide by zero");
-        }catch (StringIndexOutOfBoundsException){
+        }catch (StringIndexOutOfBoundsException e){
             System.out.println("Olmayan index kullandiniz");
         }
     }
