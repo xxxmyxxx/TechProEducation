@@ -3,7 +3,7 @@ package day29collections;
 import java.util.HashSet;
 import java.util.TreeSet;
 
-public class Set02 {
+public class Sets02 {
     public static void main(String[] args) {
         // Ornek Ogrenci email adreslerini natural order da siralanmis olarak depolayiniz.
 

@@ -1,2 +1,4 @@
-package day27abstraction;public class Fiftth {
+package day27abstraction;
+
+public abstract class Fiftth extends Courses{
 }
